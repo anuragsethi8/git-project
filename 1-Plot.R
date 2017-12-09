@@ -1,4 +1,4 @@
-﻿# 1-Plot.R
+# 1-Plot.R
 
 library(ggplot2)
 library(dplyr)
@@ -14,3 +14,4 @@ ggplot(storms, aes(x = long, y = lat)) +
   coord_map(projection = "ortho", orientation = c(21, -60, 0))
 
 ggsave("storms.png", width = 7, height = 5)
+
